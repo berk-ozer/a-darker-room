@@ -14,3 +14,14 @@ batteryCountEl.innerText = player.batteryCount;
 foodCountEl.innerText = player.foodCount;
 sanityEl.innerText = player.sanity;
 hungerEl.innerText = player.hunger;
+
+setInterval(() => {
+  if (player.hunger - 5 >= 0) {
+    player.hunger -= 5;
+    hungerEl.innerText = player.hunger;
+  }
+  if (player.sanity - 5 >= 0) {
+    player.sanity -= 5;
+    sanityEl.innerText = player.sanity;
+  }
+}, 500);
