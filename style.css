@@ -46,7 +46,8 @@ body {
   height: 20%;
 }
 
-.sanity, .hunger {
+.status .sanity,
+.status .hunger {
   font-size: 4rem;
   border: 2px solid black;
   margin: 10px;
